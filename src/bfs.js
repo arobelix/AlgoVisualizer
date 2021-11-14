@@ -76,7 +76,7 @@ window.onload = () => {
     
     generateStageInstructions();
    
-    };
+};
 
 //Instructions
 generateStageInstructions = () => {
