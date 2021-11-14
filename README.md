@@ -1,3 +1,3 @@
 # AlgoVisualizer
  Visualizes different algorithms
-![Example DFS Search](/assets/images/dfs.png)
+![Example DFS Search](./assets/images/dfs.png)
