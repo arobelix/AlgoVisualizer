@@ -1,0 +1,31 @@
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-gap: normal;
+}
+
+.cell {
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#instructions {
+    display:block;
+    float:left;
+    width:300px;
+    height:300px;
+}
+
+.obstacle {
+    background-color: gray;
+}
+.start {
+    background-color:rgb(100, 139, 60);
+}
+.end {
+    background-color:rgb(150, 35, 20);
+}
+.bfs {
+    background-color:rgb(62, 99, 179);
+}
