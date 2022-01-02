@@ -86,15 +86,18 @@ generateStageInstructions = () => {
     let next = document.createElement("button");
     next.addEventListener('click', () => nextHandler());
     next.innerHTML = "Next";
+    next.classList.add("nextButton")
 
     let back = document.createElement("button");
     back.addEventListener('click', () => backHandler());
     back.innerHTML = "Back";
+    back.classList.add("backButton")
 
     let start = document.createElement("button");
     start.addEventListener('click', () => nextHandler());
     start.innerHTML = "Start";
-    
+    start.classList.add("startButton");
+
     let instruct = document.createElement("h2");
 
     switch (currentStage) {

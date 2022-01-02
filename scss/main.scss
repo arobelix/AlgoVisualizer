@@ -1,0 +1,136 @@
+$body-background-color: white;
+$mainTitle-background-color: rgb(133, 196, 248);
+$mainNav-background-color: rgb(77, 118, 151);
+$mainHeader-background-text-color: rgb(46, 44, 44);
+$button-background-color: rgb(69, 121, 199);
+$button-hover-color: rgb(50, 89, 148);
+$mainTitle-height: 80px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
+#mainTitleContainer {
+    background-image: url("/mainTitleBackground.jpg");
+    height: $mainTitle-height;
+    margin-bottom: $mainTitle-height / 5;
+    h1 {
+        color:white;
+        text-shadow: 0 0 4px #182763, 0 0 8px #7f7ff1;
+        font-size: 50px;
+        margin: auto;
+        margin-top: $mainTitle-height / 10;
+        width: max-content;
+    }  
+}
+
+#mainNav {
+    background: $mainNav-background-color;
+    font-family: 'Lucida Sans';
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    position: sticky;
+    top: 0px;
+    li {
+        float:left;
+        list-style:none;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        &:hover {
+            background: rgb(100, 148, 187);
+        }
+    }
+
+    #profile {
+        float:right;
+    }
+}
+
+#mainFooter {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding:  20px;
+    margin-top: 50px;
+}
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-gap: normal;
+}
+
+.cell {
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#canvas {
+    border-color:black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#instructionContainer {
+    width:300px;
+    height:300px;
+    float:left;
+    margin: 10px;
+}
+
+.obstacle {
+    background-color: gray;
+}
+.start {
+    background-color:rgb(100, 139, 60);
+}
+.end {
+    background-color:rgb(150, 35, 20);
+}
+.bfs {
+    background-color:rgb(62, 99, 179);
+}
+
+button {
+
+    background: $button-background-color;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: solid 5px $button-background-color;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:10px;
+    margin-right:10px;  
+    &:hover {
+        background: $button-hover-color; 
+        border-color: $button-hover-color; 
+    }
+    &.startButton {
+        float:right;
+        background: green; 
+        border-color: green;
+    }
+    &.backButton {
+        $button-background-color: rgb(255, 103, 32);
+        $button-hover-color: rgb(167, 68, 22);
+    }
+    &.nextButton {
+        float:right;
+    }
+}
